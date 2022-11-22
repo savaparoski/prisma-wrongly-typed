@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:15.0-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: test
+    ports:
+      - 5433:5432
